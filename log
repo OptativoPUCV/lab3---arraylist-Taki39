@@ -104,3 +104,14 @@ Fri 31 Mar 2023 11:43:43 AM UTC:
  tests:  0|6
 total_score: 0/70
 95745cb
+Fri 31 Mar 2023 11:44:00 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:19:20: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   19 |   nuevaLista->size = NULL;
+      |                    ^
+cc1: all warnings being treated as errors
+Compilation failed
+5c4327e
