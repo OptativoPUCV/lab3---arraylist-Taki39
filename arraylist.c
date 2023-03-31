@@ -12,10 +12,10 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) 
 {
-  ArrayList nuevaLista;
-  nuevaLista.data = NULL;
-  nuevaLista.capacity = 2;
-  nuevaLista.size = 2;
+  ArrayList *nuevaLista = (ArrayList*) malloc (sizeof(ArrayList));
+  nuevaLista->data = NULL;
+  nuevaLista->capacity = 2;
+  nuevaLista->size = 2;
   
   return nuevaLista;
 }
