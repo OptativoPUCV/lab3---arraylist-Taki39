@@ -15,11 +15,10 @@ ArrayList *createList(void)
   ArrayList *nuevaLista = (ArrayList*) malloc (sizeof(ArrayList));
   nuevaLista->data = (void*) malloc (sizeof(void));
   nuevaLista->data = NULL;
-  
   nuevaLista->capacity = 2;
   nuevaLista->size = 2;
   
-  return nuevaLista;
+  return NULL;
 }
 
 void append(ArrayList * l, void * data){
