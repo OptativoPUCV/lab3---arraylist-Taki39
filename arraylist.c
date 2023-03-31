@@ -38,7 +38,9 @@ void append(ArrayList * l, void * data)
   }
   else
   {
+    l->size++;
     
+    l->data[l->size] = data;
   }
 }
 
