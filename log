@@ -151,3 +151,14 @@ Fri 31 Mar 2023 12:09:11 PM UTC:
  tests:  1|5
 total_score: 10/70
 aecf6a4
+Fri 31 Mar 2023 12:24:18 PM UTC: 
+ arraylist.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:35:9: error: unused variable ‘i’ [-Werror=unused-variable]
+   35 |     int i = l->size-1;
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+1083342
