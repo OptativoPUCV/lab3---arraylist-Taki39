@@ -15,9 +15,9 @@ ArrayList *createList(void)
   ArrayList nuevaLista;
   nuevaLista.data = NULL;
   nuevaLista.capacity = 2;
-  nuevaLista.size = NULL;
+  nuevaLista.size = 2;
   
-  return NULL;
+  return &nuevaLista;
 }
 
 void append(ArrayList * l, void * data){
