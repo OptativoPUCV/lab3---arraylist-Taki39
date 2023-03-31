@@ -48,20 +48,25 @@ void push(ArrayList * l, void * data, int i)
 {
   if (l == NULL) return exit(1);
 
+  if (i < 0 || i > l->size) 
+  {
+    printf("Error: Invalid index\n");
+    return;
+  }
+    
   if (l->size == l->capacity) 
   {
-    l->data = realloc(l->data, sizeof(4*sizeof(void*)));
-    l->size++;
     l->capacity *= 2;
-    
-    l->data[i] = data;
-    
+    l->data = realloc(l->data, l->capacity * sizeof(int)); 
   }
-  else
+
+  for (int j = l->size - 1; j >= i; j--) 
   {
-    l->size++;
-    l->data[i] = data;
+    l->data[j+1] = l->data[j];
   }
+  
+  l->data[i] = data;
+  l->size++;
 }
 
 void* pop(ArrayList * l, int i){
