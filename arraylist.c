@@ -10,7 +10,9 @@ typedef struct ArrayList {
     int size;
 } ArrayList;
 
-ArrayList *createList(void) {
+ArrayList *createList(void) 
+{
+  
     return NULL;
 }
 
