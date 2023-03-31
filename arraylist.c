@@ -40,6 +40,7 @@ void append(ArrayList * l, void * data)
   else
   {
     l->size++;
+    l->capacity += 1;
     l->data[l->size-1] = data;
   }
 }
