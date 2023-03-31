@@ -53,3 +53,14 @@ Fri 31 Mar 2023 11:36:20 AM UTC:
  tests:  0|6
 total_score: 0/70
 93d5b76
+Fri 31 Mar 2023 11:37:43 AM UTC: 
+ arraylist.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:10: error: unused variable ‘data’ [-Werror=unused-variable]
+   16 |   void **data = (void*) malloc (sizeof(void));
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e3ff221
