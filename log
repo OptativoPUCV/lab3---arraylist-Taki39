@@ -64,3 +64,14 @@ arraylist.c:16:10: error: unused variable ‘data’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e3ff221
+Fri 31 Mar 2023 11:37:56 AM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:18:10: error: unused variable ‘data’ [-Werror=unused-variable]
+   18 |   void **data = (void*) malloc (sizeof(void));
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a345e5a
