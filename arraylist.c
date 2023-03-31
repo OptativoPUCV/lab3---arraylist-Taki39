@@ -12,8 +12,12 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) 
 {
+  ArrayList nuevaLista;
+  nuevaLista.data = NULL;
+  nuevaLista.capacity = 2;
+  nuevaLista.size = NULL;
   
-    return NULL;
+  return NULL;
 }
 
 void append(ArrayList * l, void * data){
