@@ -86,3 +86,9 @@ arraylist.c:16:3: error: ‘data’ undeclared (first use in this function)
 arraylist.c:16:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 081d261
+Fri 31 Mar 2023 11:38:43 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+2a2db59
