@@ -32,7 +32,6 @@ void append(ArrayList * l, void * data)
   {
     l->data = realloc(l->data, sizeof(4*sizeof(void*)));
     l->size++;
-    int i = l->size-1;
     l->data = data;
     
   }
