@@ -76,14 +76,14 @@ void* pop(ArrayList * l, int i)
     return 0;
   }
 
-  void* removed_element = l->data[i];
+  void* eliminado = l->data[i];
   for (int j = i; j < l->size - 1; j++) 
   {
     l->data[j] = l->data[j+1];
   }
   
   l->size--;
-  return removed_element;
+  return eliminado;
   
 }
 
