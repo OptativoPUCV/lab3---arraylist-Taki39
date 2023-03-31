@@ -15,6 +15,8 @@ ArrayList *createList(void)
   ArrayList *l = (ArrayList*) malloc (sizeof(ArrayList));
   l->data = (void**) malloc (2*sizeof(void*));
   if(l == NULL || l->data == NULL) exit(1);
+
+//data es como se recorre
   
   l->capacity = 2;
   l->size = 0;
@@ -22,8 +24,18 @@ ArrayList *createList(void)
   return l;
 }
 
-void append(ArrayList * l, void * data){
+void append(ArrayList * l, void * data)
+{
+  if (l == NULL) return exit(1);
 
+  if (l->size == l->capacity) 
+  {
+    l->data = realloc(l->data, sizeof(4*sizeof(void*)));
+  }
+  else
+  {
+    
+  }
 }
 
 void push(ArrayList * l, void * data, int i){
