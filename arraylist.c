@@ -33,14 +33,13 @@ void append(ArrayList * l, void * data)
     l->data = realloc(l->data, sizeof(4*sizeof(void*)));
     l->size++;
     
-    l->data[l->size] = data;
+    l->data[l->size-1] = data;
     
   }
   else
   {
     l->size++;
-    
-    l->data[l->size] = data;
+    l->data[l->size-1] = data;
   }
 }
 
