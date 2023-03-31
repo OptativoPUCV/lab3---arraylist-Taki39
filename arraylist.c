@@ -82,7 +82,7 @@ void* pop(ArrayList * l, int i)
     l->data[j] = l->data[j+1];
   }
   
-  l->size /= 2;
+  l->size--;
   return removed_element;
   
 }
