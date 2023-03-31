@@ -93,14 +93,18 @@ void* get(ArrayList * l, int i)
   {
     return 0;
   }
-    return l->data[i];
+  
+  return l->data[i];
 }
 
-int get_size(ArrayList * l){
+int get_size(ArrayList * l)
+{
     return l->size;
 }
 
 //remove elements
-void clean(ArrayList * l){
-    
+void clean(ArrayList * l)
+{
+  l->capacity = 2;
+  l->size = 0;
 }
