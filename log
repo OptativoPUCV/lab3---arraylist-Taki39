@@ -297,3 +297,9 @@ Sun 02 Apr 2023 01:56:50 AM UTC:
  tests:  7|1
    [ INFO ] llamando a get(-1)
 a3c58d6
+Sun 02 Apr 2023 01:57:45 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+1e749f0
