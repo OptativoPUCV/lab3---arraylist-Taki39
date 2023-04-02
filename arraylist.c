@@ -82,7 +82,7 @@ void* pop(ArrayList * l, int i)
     l->data[j] = l->data[j+1];
   }
   
-  l->size /= 2;
+  l->size = l->size-1;
   return eliminado;
   
 }
