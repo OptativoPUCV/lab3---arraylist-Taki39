@@ -73,7 +73,14 @@ void* pop(ArrayList * l, int i)
 {
   if (i < 0)
   {
-    return l->data[l->size-1];
+    void* eliminado = l->data[l->size-i];
+    for (int j = l->size-1; j < l->size - 1; j++) 
+    {
+      l->data[j] = l->data[j+1];
+    }
+  
+    l->size = l->size-1;
+    return eliminado;
   }
 
   if (i >= l->size)
