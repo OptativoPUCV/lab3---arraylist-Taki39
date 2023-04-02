@@ -91,7 +91,7 @@ void* get(ArrayList * l, int i)
 {
   if (i < 0 || i >= l->size)
   {
-    return l->data[0];
+    return l->data[l->size-1];
   }
   
   void *num = l->data[i];
