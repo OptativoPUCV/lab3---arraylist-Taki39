@@ -71,9 +71,14 @@ void push(ArrayList * l, void * data, int i)
 
 void* pop(ArrayList * l, int i)
 {
-  if (i < 0 || i >= l->size) 
+  if (i < 0)
   {
-    return 0;
+    return l->data[l->size-1];
+  }
+
+  if (i >= l->size)
+  {
+    return NULL;
   }
 
   void* eliminado = l->data[i];
