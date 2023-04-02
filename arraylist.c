@@ -89,9 +89,14 @@ void* pop(ArrayList * l, int i)
 
 void* get(ArrayList * l, int i)
 {
-  if (i < 0 || i >= l->size)
+  if (i < 0)
   {
     return l->data[l->size-1];
+  }
+
+  if (i >= l->size)
+  {
+    return NULL;
   }
   
   void *num = l->data[i];

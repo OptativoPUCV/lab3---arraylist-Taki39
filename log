@@ -315,3 +315,9 @@ Sun 02 Apr 2023 02:03:12 AM UTC:
  tests:  9|2
 total_score: 40/70
 8babe32
+Sun 02 Apr 2023 02:04:09 AM UTC: 
+ arraylist.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ tests:  10|1
+total_score: 50/70
+b0b59c8
