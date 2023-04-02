@@ -28,7 +28,7 @@ void append(ArrayList * l, void * data)
 
   if (l->size == l->capacity) 
   {
-    l->data = realloc(l->data, sizeof(4*sizeof(void*)));
+    l->data = realloc(l->data, l->capacity * sizeof(int));
     l->size++;
     l->capacity *= 2;
     
@@ -54,7 +54,7 @@ void push(ArrayList * l, void * data, int i)
   if (l->size == l->capacity) 
   {
     l->capacity *= 2;
-    l->data = realloc(l->data, sizeof(4*sizeof(void*))); 
+    l->data = realloc(l->data, l->capacity * sizeof(int));
   }
 
   for (int j = l->size - 1; j >= i; j--) 
