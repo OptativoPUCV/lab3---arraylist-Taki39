@@ -15,8 +15,6 @@ ArrayList *createList(void)
   ArrayList *l = (ArrayList*) malloc (sizeof(ArrayList));
   l->data = (void**) malloc (2*sizeof(void*));
   if(l == NULL || l->data == NULL) exit(1);
-
-//data es como se recorre
   
   l->capacity = 2;
   l->size = 0;
@@ -48,10 +46,9 @@ void push(ArrayList * l, void * data, int i)
 {
   if (l == NULL) return exit(1);
 
-  if (i < 0 || i > l->size) 
+  if (i > l->size) 
   {
-    printf("Error: Invalid index\n");
-    return;
+    EXIT_FAILURE;
   }
     
   if (l->size == l->capacity) 
